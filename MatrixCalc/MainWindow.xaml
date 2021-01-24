@@ -1,0 +1,43 @@
+﻿<Window x:Class="MatrixCalc.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MatrixCalc"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="830">
+    <Grid x:Name="grid" Margin="0" Loaded="grid_Loaded">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="280"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <local:MatrixView Grid.Row="0" x:Name="ope1" Height="Auto" Margin="0,0,0,0" Width="Auto" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <local:MatrixView Grid.Row="0" x:Name="ope2" Height="Auto" Margin="246,0,0,0" Width="Auto" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <local:MatrixView Grid.Row="0" x:Name="res" Height="Auto" Margin="492,0,0,0" Width="Auto" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Grid Grid.Row="1" x:Name="button_grid" Margin="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="50"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+
+            <Image Grid.Row="1" Grid.Column="0" x:Name="btPlus" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="30" Height="30" Source="Resources/plus.png" MouseLeftButtonDown="btPlus_MouseLeftButtonDown"/>
+            <Image Grid.Row="1" Grid.Column="1" x:Name="btMinus" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="30" Height="30" Source="Resources/minus.png" MouseLeftButtonDown="btMinus_MouseLeftButtonDown"/>
+            <Image Grid.Row="1" Grid.Column="2" x:Name="btMultiply" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="30" Height="30" Source="Resources/multiply.png" MouseLeftButtonDown="btMultiply_MouseLeftButtonDown"/>
+            <Image Grid.Row="2" Grid.Column="0" x:Name="btInv" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="30" Height="30" Source="Resources/Inv.png" MouseLeftButtonDown="btInv_MouseLeftButtonDown"/>
+            <Image Grid.Row="2" Grid.Column="1" x:Name="btTrans" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="30" Height="30" Source="Resources/Tns.png" MouseLeftButtonDown="btTrans_MouseLeftButtonDown"/>
+            <Image Grid.Row="2" Grid.Column="2" x:Name="btDet" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="30" Height="30" Source="Resources/Det.png" MouseLeftButtonDown="btDet_MouseLeftButtonDown"/>
+            <Image Grid.Row="3" Grid.Column="0" x:Name="btClear" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="30" Height="30" Source="Resources/Clear.png"/>
+            <Button Grid.Row="3" Grid.Column="2" x:Name="btEqual" Content="=" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="30" Click="btEqual_Click" Height="30"/>
+
+            <Button Grid.Row="3" Grid.Column="1" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Click="Button_Click" Height="30"/>
+        </Grid>
+    </Grid>
+</Window>
