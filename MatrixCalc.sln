@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixCalc", "MatrixCalc\MatrixCalc.csproj", "{E86A1D7C-76EB-498B-9EA5-C37E3EBEE529}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCTool", "MCTool\MCTool.csproj", "{236C2D50-470C-4FDE-9B63-BB48475BB99F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlusButton", "PlusButton\PlusButton.csproj", "{5D401966-371B-489D-9AE1-ABEFBFDF67B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E86A1D7C-76EB-498B-9EA5-C37E3EBEE529}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E86A1D7C-76EB-498B-9EA5-C37E3EBEE529}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E86A1D7C-76EB-498B-9EA5-C37E3EBEE529}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E86A1D7C-76EB-498B-9EA5-C37E3EBEE529}.Release|Any CPU.Build.0 = Release|Any CPU
+		{236C2D50-470C-4FDE-9B63-BB48475BB99F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{236C2D50-470C-4FDE-9B63-BB48475BB99F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{236C2D50-470C-4FDE-9B63-BB48475BB99F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{236C2D50-470C-4FDE-9B63-BB48475BB99F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D401966-371B-489D-9AE1-ABEFBFDF67B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D401966-371B-489D-9AE1-ABEFBFDF67B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D401966-371B-489D-9AE1-ABEFBFDF67B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D401966-371B-489D-9AE1-ABEFBFDF67B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3E7728E8-BB23-4283-B5F1-38B14E2220A5}
+	EndGlobalSection
+EndGlobal

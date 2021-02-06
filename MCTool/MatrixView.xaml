@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="MCTool.MatrixView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MCTool"
+             mc:Ignorable="d" 
+             d:DesignHeight="280" d:DesignWidth="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="250"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <DockPanel LastChildFill="True">
+            <DataGrid Grid.Row="0" x:Name="dg" Margin="0,0,0,0" AutoGenerateColumns="True"  ItemsSource="{Binding}" CellEditEnding="dg_CellEditEnding" CanUserDeleteRows="False" HeadersVisibility="All" CanUserResizeColumns="True" Grid.ColumnSpan="2" SelectionChanged="dg_SelectionChanged">
+                <DataGrid.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem x:Name="miRead" Header="読込" Click="ReadClick"/>
+                        <MenuItem x:Name="miSave" Header="保存" Click="SaveClick"/>
+                    </ContextMenu>
+                </DataGrid.ContextMenu>
+                <DataGrid.RowHeaderStyle>
+                    <Style TargetType="{x:Type DataGridRowHeader}">
+                        <Setter Property="Content" Value="{Binding RowIndex}"/>
+                    </Style>
+                </DataGrid.RowHeaderStyle>
+            </DataGrid>
+        </DockPanel>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <DockPanel  LastChildFill="True">
+                <Label Grid.Column="0" Content="row size"/>
+                <local:NumericUpDown x:Name="nudRowSize" Height="20" Width="60"/>
+            </DockPanel>
+            <DockPanel LastChildFill="True">
+                <Label Grid.Column="0" Content="col size"/>
+                <local:NumericUpDown x:Name="nudColSize" Height="20" Width="60"/>
+            </DockPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>

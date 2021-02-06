@@ -1,0 +1,11 @@
+C:\Users\popcorn\Desktop\MatrixCalc\PlusButton\obj\Debug\PlusButton.csprojAssemblyReference.cache
+C:\Users\popcorn\Desktop\MatrixCalc\PlusButton\obj\Debug\PlusButton.csproj.CoreCompileInputs.cache
+C:\Users\popcorn\Desktop\MatrixCalc\PlusButton\obj\Debug\PlusButton.csproj.CopyComplete
+C:\Users\popcorn\Desktop\MatrixCalc\PlusButton\bin\Debug\PlusButton.dll
+C:\Users\popcorn\Desktop\MatrixCalc\PlusButton\bin\Debug\PlusButton.pdb
+C:\Users\popcorn\Desktop\MatrixCalc\PlusButton\obj\Debug\PlusButton.dll
+C:\Users\popcorn\Desktop\MatrixCalc\PlusButton\obj\Debug\PlusButton.pdb
+C:\Users\popcorn\Desktop\MatrixCalc\PlusButton\bin\Debug\MCTool.dll
+C:\Users\popcorn\Desktop\MatrixCalc\PlusButton\bin\Debug\MCTool.pdb
+C:\Users\popcorn\Desktop\MatrixCalc\PlusButton\bin\Debug\Matrix.dll
+C:\Users\popcorn\Desktop\MatrixCalc\PlusButton\bin\Debug\Matrix.pdb
