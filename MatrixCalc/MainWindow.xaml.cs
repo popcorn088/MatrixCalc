@@ -13,8 +13,12 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-using MCTool;
+using System.Reflection;
+using System.IO;
+using System.Windows.Forms;
 
+using MCTool;
+using NuCalc;
 using PlusButton;
 
 namespace MatrixCalc
@@ -31,7 +35,7 @@ namespace MatrixCalc
 
         private void TestButton_Click(object sender, RoutedEventArgs e)
         {
-
+            /*
             BitmapImage bmp = new BitmapImage(new Uri(@"C:\Users\popcorn\Desktop\MatrixCalc\MatrixCalc\bin\Debug\Det.png"));
             Image img = new Image();
             img.Source = bmp;
@@ -43,7 +47,33 @@ namespace MatrixCalc
 
             btn.ope1 = ope1;
             btn.ope2 = ope2;
-            btn.rslt = rslt;
+            btn.rslt = rslt;*/
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            ope1.mat = new matrix(1, 1, false);
+            ope2.mat = new matrix(1, 1, false);
+            rslt.mat = new matrix(1, 1, false);
+
+        }
+
+        private void btEqual_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            if (ofd.ShowDialog() != System.Windows.Forms.DialogResult.OK)
+            {
+                return;
+            }
+
+            DLLInfo dllinfo = new DLLInfo(ofd.FileName);
+            dllinfo.ibutton.ope1 = ope1;
+            dllinfo.ibutton.ope2 = ope2;
+            dllinfo.ibutton.rslt = rslt;
+
+            button_grid.Children.Add(dllinfo.ibutton.button);
+            Grid.SetColumn(dllinfo.ibutton.button, 2);
+            Grid.SetRow(dllinfo.ibutton.button, 1);
         }
     }
 }

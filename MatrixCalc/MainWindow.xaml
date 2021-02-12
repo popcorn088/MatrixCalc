@@ -6,13 +6,17 @@
         xmlns:local="clr-namespace:MatrixCalc"
         xmlns:MCTool="clr-namespace:MCTool;assembly=MCTool" x:Class="MatrixCalc.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="800">
+        Title="MainWindow" Height="500" Width="800" Loaded="Window_Loaded">
     <Grid x:Name="grid" Margin="0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="61*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="280"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Grid Grid.Row="1" x:Name="button_grid" Margin="0">
+        <Grid Grid.Row="1" x:Name="button_grid" Margin="0" Grid.ColumnSpan="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="50"/>
                 <ColumnDefinition Width="50"/>
@@ -24,7 +28,7 @@
                 <RowDefinition Height="30"/>
                 <RowDefinition Height="30"/>
             </Grid.RowDefinitions>
-            <Button Grid.Row="3" Grid.Column="2" x:Name="btEqual" Content="=" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="30" Height="30"/>
+            <Button Grid.Row="3" Grid.Column="2" x:Name="btEqual" Content="=" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="btEqual_Click"/>
 
             <Button x:Name="TestButton" Grid.Row="3" Grid.Column="1" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Click="TestButton_Click"/>
         </Grid>

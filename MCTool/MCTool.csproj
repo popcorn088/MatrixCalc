@@ -50,6 +50,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DLLInfo.cs" />
     <Compile Include="IButton.cs" />
     <Compile Include="MatrixView.xaml.cs">
       <DependentUpon>MatrixView.xaml</DependentUpon>
@@ -57,6 +58,7 @@
     <Compile Include="MCButton.xaml.cs">
       <DependentUpon>MCButton.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MCButtonTool.cs" />
     <Compile Include="NumericUpDown.xaml.cs">
       <DependentUpon>NumericUpDown.xaml</DependentUpon>
     </Compile>

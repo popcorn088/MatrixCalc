@@ -9,22 +9,33 @@ using System.Windows.Media;
 using System.Windows;
 
 using MCTool;
+using System.Windows.Media.Imaging;
 
 namespace PlusButton
 {
     public class Plus : IButton 
     {
         public MCButton button { get; set; }
-        public Image image { get; set; }
+        public Image image
+        {
+            get
+            {
+                BitmapImage bmp = new BitmapImage(new Uri(@"C:\Users\popcorn\Desktop\MatrixCalc\MatrixCalc\bin\Debug\Det.png"));
+                Image img = new Image();
+                img.Source = bmp;
+                return img;
+            }
+            set
+            {
+            }
+        }
 
         public MatrixView ope1 { get; set; }
         public MatrixView ope2 { get; set; }
         public MatrixView rslt { get; set; }
 
-        public Plus(Image img)
+        public Plus()
         {
-            image = img;
-
             button = new MCButton();
             button.SetImage(image);
             button.Click += Run;
